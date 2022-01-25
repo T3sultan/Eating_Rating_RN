@@ -1,22 +1,29 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import HeaderTabs from '../../components/HeaderTabs';
 
 export default function Home() {
       return (
             <View style={styles.container}>
+                  <StatusBar
+                        style="auto"
+                        translucent={false}
+                        backgroundColor="white"
+                  
+
+                  />
                   <HeaderTabs />
-                  <Text>Home</Text>
+
             </View>
       );
 }
 
 const styles = StyleSheet.create({
       container: {
-            flex: 1,
-            backgroundColor: 'white',
-            alignItems: 'center',
-            justifyContent: 'center',
+            // flex: 1,
+            // backgroundColor: 'white',
+            // alignItems: 'center',
+            // justifyContent: 'center',
 
       }
 
