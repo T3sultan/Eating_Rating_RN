@@ -1,6 +1,7 @@
 import { StatusBar, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import HeaderTabs from '../../components/HeaderTabs';
+import SearchBar from '../../components/SearchBar';
 
 export default function Home() {
       return (
@@ -8,11 +9,17 @@ export default function Home() {
                   <StatusBar
                         style="auto"
                         translucent={false}
-                        backgroundColor="white"
-                  
+                        backgroundColor="#eee"
+
 
                   />
-                  <HeaderTabs />
+                  <View style={{ backgroundColor: "white", padding: 10 }}>
+                        <HeaderTabs />
+                        <SearchBar />
+
+                  </View>
+
+
 
             </View>
       );
@@ -20,11 +27,8 @@ export default function Home() {
 
 const styles = StyleSheet.create({
       container: {
-            // flex: 1,
-            // backgroundColor: 'white',
-            // alignItems: 'center',
-            // justifyContent: 'center',
-
+            flex: 1,
+            backgroundColor: '#eee',
       }
 
 });
