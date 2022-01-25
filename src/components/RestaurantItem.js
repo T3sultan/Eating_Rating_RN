@@ -48,7 +48,7 @@ export const Restaurants = [
 
 export default function RestaurantItem(props) {
       return (
-            <View activeOpacity={0.5}>
+            <>
                   {
                         props.restaurantData.map((restaurant, index) => (
                               <TouchableOpacity key={index} style={{ marginTop: 15, padding: 15, backgroundColor: "white" }}>
@@ -62,7 +62,7 @@ export default function RestaurantItem(props) {
                   }
 
 
-            </View>
+            </>
 
       );
 }
